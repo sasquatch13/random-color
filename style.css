@@ -28,8 +28,8 @@ h1 {
 }
 .left {
     padding-left: 20px;
-    
     margin: 0;
+    background-color: white;
 }
 ul {
     list-style: none;
@@ -46,6 +46,7 @@ li {
 .right {
     border-left: solid black 2px;
     margin: 0;
+    background-color: white;
 }
 
 button {
