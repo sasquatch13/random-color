@@ -7,7 +7,7 @@ body {
 
 .container {
     max-width: 380px;
-    min-width: 380px;
+    min-width: 380;
     height: 550px;
     margin-left: auto;
     margin-right: auto;
@@ -25,7 +25,6 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-    background-color: #000000;
 }
 .left {
     padding-left: 20px;
@@ -38,10 +37,15 @@ ul {
 }
 
 li {
-    color: #7ab9a5;
     font-size: larger;
     font-weight: bold;
     text-align: center;
+    color:#2a423b;
+}
+
+.right {
+    border-left: solid black 2px;
+    margin: 0;
 }
 
 button {
