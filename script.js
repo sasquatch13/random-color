@@ -1,17 +1,7 @@
 const characters = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, "a", "b", "c", "d", "e", "f"]
 const save = document.getElementById("save")
 let color
-const colorList = []
 const list = document.getElementById("list")
-
-
-save.addEventListener("click", function() {
-    colorList.push(color)
-    list.innerHTML = colorList
-
-
-})
-
 
 function randomColor() {
     let block = document.getElementById("block")
@@ -25,7 +15,13 @@ function randomColor() {
     
     }
     block.style.backgroundColor = display.textContent;
-    color = "<li>" +  display.textContent + "</li>"
+    display.style.color = display.textContent 
+    color = display.textContent
+
     
 }
+
+save.addEventListener("click", function() {
+    list.innerHTML += `<li> ${color} </li>`  
+})
 
