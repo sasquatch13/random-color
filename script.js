@@ -22,6 +22,7 @@ function randomColor() {
 }
 
 save.addEventListener("click", function() {
-    list.innerHTML += `<li> ${color} </li>`  
+    list.innerHTML += `<li style="color:${display.textContent};"> ${color} </li>`
+    
 })
 
